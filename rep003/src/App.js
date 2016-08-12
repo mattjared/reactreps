@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 
 var InputBox = React.createClass({
@@ -7,9 +8,10 @@ var InputBox = React.createClass({
       text: "hello!"
     };
   },
-  submitForm: function(event){
+  showText: function(event){
     event.preventDefault();
-    this.setState({text: ReactDOM.findDOMNode(this.refs.theInput).value});
+    var theInputText = ReactDOM.findDOMNode(this.refs.theInput).value;
+    this.setState({text: theInputText});
   },
   render: function(){
     return (
@@ -18,7 +20,7 @@ var InputBox = React.createClass({
         <br />
         <form>
           <input type="text" ref="theInput" />
-          <button type="submit" onClick={this.submitForm}>Go!</button>
+          <button type="submit" onClick={this.showText}>Go!</button>
         </form>
         <p>{this.state.text}</p>
       </div>
