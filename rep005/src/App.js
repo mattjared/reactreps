@@ -21,7 +21,7 @@ var ButtonThing = React.createClass({
         return (
             <div>
                 <button onClick={this.changeColor}>Add Class!</button>
-               <div className={this.state.color}>{this.state.text}</div>
+                <div className={this.state.color}>{this.state.text}</div>
             </div>
         )
     }

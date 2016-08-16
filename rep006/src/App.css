@@ -1,0 +1,29 @@
+.App {
+  max-width: 64em;
+  width: 100%;
+  margin: 0 auto;
+}
+nav h2 {
+  text-align: center;
+  width: 50%;
+  float: left;
+  border-bottom: 3px solid rgba(0, 0, 0, .3);
+  padding: 20px 0;
+}
+nav h2:hover {
+  cursor: pointer;
+}
+nav h2.active {
+  background-color: rgba(255, 0, 0, .2);
+}
+.content {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}

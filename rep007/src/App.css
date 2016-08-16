@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+.App-intro {
+  font-size: large;
+}
+.elWdith {
+  width: 200px;
+  color: white;
+  font-size: 150%;
+  font-weight: 700;
+  background-color: #e74c3c;
+  display: inline-block;
+  padding: 30px 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 15px solid rgba(0,0,0,.1);
+}
+.elWdith p{
+  display: inline-block;
+}
