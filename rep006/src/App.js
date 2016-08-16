@@ -1,31 +1,41 @@
 import React, { Component } from 'react';
 import './App.css';
 
+var NavH2 = props => <h2 onClick={props.onClick} className={props.isActive ? 'active' : ''}>{props.text}</h2>
+
 var TabbedNav = React.createClass({
     getInitialState: function() {
         return {
-            navClass: '',
+            activeTab: 1,
             contentClass: 'hidden'
         }
     },
-    handleClick: function(){
-        if (this.state.navClass !== 'active') {
-            this.setState({navClass: 'active'});
-        }
-        if (this.state.contentClass === 'hidden') {
-            this.setState({contentClass: 'visible'});
-        }
+    handleClick: function(targetState) {
+        return () => {
+          console.info(this);
+          return this.setState({activeTab: targetState})
+        };
+    },
+    renderBody: function(){
+      if (this.state.activeTab === 1) {
+        return (
+            <p>First Section</p>
+        )
+      } else if (this.state.activeTab === 2) {
+        return (
+          <p>Second Section</p>
+        )
+      }
     },
     render: function() {
         return (
             <div>
-                <nav onClick={this.handleClick} className={this.state.navClass}>
-                    <h2>First Item</h2>
-                    <h2>Second Item</h2>
+                <nav>
+                    <NavH2 isActive={this.state.activeTab === 1} text="First Item" onClick={this.handleClick(1)}/>
+                    <NavH2 isActive={this.state.activeTab === 2} text="Second Item" onClick={this.handleClick(2)}/>
                 </nav>
                 <div className="content">
-                    <p className={this.state.contentClass}>First Section</p>
-                    <p>Second Section</p>
+                    {this.renderBody()}
                 </div>
             </div>
         )
