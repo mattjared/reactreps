@@ -40,5 +40,5 @@ Completed Reps
 - Rep003: show content of input after button click - using refs
 - Rep004: same as rep004 but with state
 - Rep005: toggle class on click
-- Rep006: attempt at tabbed navigation but stumbled on padding state to different components
+- Rep006: tabbed navigation w/ lots of help from @ericf89
 - Rep007: width and height of element. lots of help from [this](https://github.com/KyleAMathews/react-component-width-mixin)
