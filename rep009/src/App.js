@@ -7,14 +7,19 @@ var ButtonGrow = React.createClass({
     getInitialState: function(){
         return {
             blueButton: null,
+            currentClicks: 0,
         }
     },
     handleClick: function(targetState) {
         return () => {
-            console.info(this);
-        };
+            return this.setState({ currentClicks: this.state.currentClicks + 1})
+        }
     },
     render: function(){
+        var currentDivs = [];
+        for (var i = 0; i < this.state.currentClicks; i++) {
+            currentDivs.push(<div className="aSingleDiv"></div>);
+        };
         return (
             <div>
                 <div className="content">
@@ -25,10 +30,11 @@ var ButtonGrow = React.createClass({
                         <Button text="RED BUTTON" btnColor="red" onClick={this.handleClick()}/>
                     </div>
                 </div>
-                <div>
-                    <br />
-                    <br />
-                    <p>The thing</p>
+                <div className="content text-center">
+                    {this.state.currentClicks}
+                    <div class="div-contain">
+                        {currentDivs}
+                    </div>
                 </div>
             </div>
         )

@@ -37,3 +37,17 @@ span.blue {
 span.red {
   background-color: #c0392b;
 }
+.text-center {
+    text-align: center;
+}
+.div-contain {
+    display: block;
+    overflow: auto;
+}
+.aSingleDiv {
+    background-color: #955572;
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin: 10px;
+}
