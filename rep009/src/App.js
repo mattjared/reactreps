@@ -13,10 +13,8 @@ var ButtonGrow = React.createClass({
     handleClick: function(targetState) {
         return () => {
             if (targetState === 'blue') {
-                console.log('blue')
                 return this.setState({ currentBlueClicks: this.state.currentBlueClicks + 1 })
             } else if (targetState === 'red') {
-                console.log('red')
                 return this.setState({ currentRedClicks: this.state.currentRedClicks + 1 })
             }
         }
