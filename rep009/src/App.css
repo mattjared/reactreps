@@ -44,8 +44,15 @@ span.red {
     display: block;
     overflow: auto;
 }
-.aSingleDiv {
-    background-color: #955572;
+.aSingleRedDiv {
+    background-color: #c0392b;
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin: 10px;
+}
+.aSingleBlueDiv {
+    background-color: #2980b9;
     height: 20px;
     width: 20px;
     float: left;
