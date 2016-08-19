@@ -17,7 +17,7 @@ Possible reps I'd like to attempt:
 - [ ] budget builder
 - [ ] timer
 - [ ] navigation menu
-- [ ] tabbed nav
+- [x] [tabbed nav](https://github.com/mattjared/reactreps/tree/master/rep006)
 - [ ] add state to every pixel hovered over
 - [ ] html minifier
 - [ ] time on site calculator
