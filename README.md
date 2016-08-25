@@ -33,6 +33,12 @@ Possible reps I'd like to attempt:
 - [ ] "are there nba games today?" app
 - [ ] sticky scroll bar
 - [ ] usefull css output with a gui like [this](http://www.lugolabs.com/caret)
+- [ ] reverse a string
+- [ ] pig latin generator
+- [ ] character counter
+- [ ] count all characters and break them down into tweets
+
+Additional ideas: [Here](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/), [here](http://bonsaiden.github.io/JavaScript-Garden/), [here](https://github.com/jlem/WebDevChallenge) and [here](https://www.reddit.com/r/dailyprogrammer).
 
 Completed Reps
 - Rep001: show time
