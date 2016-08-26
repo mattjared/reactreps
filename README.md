@@ -15,7 +15,7 @@ Possible reps I'd like to attempt:
 - [ ] tax bracket breakdown
 - [ ] cost of living breakdown
 - [ ] budget builder
-- [ ] timer
+- [x] timer (kinda accomplished somewhat [here](https://github.com/mattjared/reactreps/tree/master/rep011))
 - [ ] navigation menu
 - [x] [tabbed nav](https://github.com/mattjared/reactreps/tree/master/rep006)
 - [ ] add state to every pixel hovered over
@@ -51,4 +51,4 @@ Completed Reps
 - Rep008: move input range and value shows on page
 - Rep009: click a button and add a div of each button color to the page
 - Rep010: attempt to make an HTML generator, will come back to this when i figure out code / pre
-- Rep011: click a button, start a timer
+- Rep011: load the page, see the time.
