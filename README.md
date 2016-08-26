@@ -50,3 +50,5 @@ Completed Reps
 - Rep007: width and height of element. lots of help from [this](https://github.com/KyleAMathews/react-component-width-mixin)
 - Rep008: move input range and value shows on page
 - Rep009: click a button and add a div of each button color to the page
+- Rep010: attempt to make an HTML generator, will come back to this when i figure out code / pre
+- Rep011: click a button, start a timer
