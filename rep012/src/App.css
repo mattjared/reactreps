@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+.intro a,
+.intro a:visited,
+.intro a:active,
+.intro a:hover {
+  color: hotpink;
+}
+.section {
+  padding: 20px 0 60px 0;
+  border-top: 3px solid periwinkle;
+}
+.section-intro {
+  padding: 40px 0;
+  font-style: italic;
+}
