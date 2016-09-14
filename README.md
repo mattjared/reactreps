@@ -53,3 +53,4 @@ Completed Reps
 - Rep010: attempt to make an HTML generator, will come back to this when i figure out code / pre
 - Rep011: load the page, see the time.
 - Rep012: Go through each section and examples from [React Patterns](http://reactpatterns.com/)
+- Rep013: Copy and paste the [new React Router](https://github.com/ReactTraining/react-router/releases/tag/v4.0.0-0) to test it out
