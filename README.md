@@ -29,7 +29,7 @@ Possible reps I'd like to attempt:
 - [ ] resume maker (enter a bunch of data and click a few buttons to change styles made)
 - [ ] swanson pyramid of greatness
 - [ ] markdown editor
-- [ ] calculator
+- [x] calculator [first pass](https://github.com/mattjared/reactreps/tree/master/rep011)
 - [ ] "are there nba games today?" app
 - [ ] sticky scroll bar
 - [ ] usefull css output with a gui like [this](http://www.lugolabs.com/caret)
@@ -54,3 +54,6 @@ Completed Reps
 - Rep011: load the page, see the time.
 - Rep012: Go through each section and examples from [React Patterns](http://reactpatterns.com/)
 - Rep013: Copy and paste the [new React Router](https://github.com/ReactTraining/react-router/releases/tag/v4.0.0-0) to test it out
+- Rep014: [AJAX Requests in React](https://daveceddia.com/ajax-requests-in-react/)
+- Rep015: Failed attempt and doing anything productive with dates
+- Rep016: First pass at a simple calculator that just adds values
