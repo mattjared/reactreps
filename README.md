@@ -57,3 +57,5 @@ Completed Reps
 - Rep014: [AJAX Requests in React](https://daveceddia.com/ajax-requests-in-react/)
 - Rep015: Failed attempt and doing anything productive with dates
 - Rep016: First pass at a simple calculator that just adds values
+- Rep017: Play with inputs and state again
+- Rep018: Reactforbeginners.com course materials
