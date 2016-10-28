@@ -7,9 +7,9 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Tax Bracket Calculator</h2>
+          <h2>What's your yearly salary?</h2>
+          <h4>And how are you filing?</h4>
         </div>
-        <h3>What is your yearly salary?</h3>
         <Input />
       </div>
     );

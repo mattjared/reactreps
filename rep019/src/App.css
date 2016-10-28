@@ -20,7 +20,7 @@ input {
 }
 button {
     display: inline-block;
-    margin: 0 auto;
+    margin: 50px auto;
     font-size: 200%;
     padding: 1%;
     outline: 0;
@@ -31,4 +31,8 @@ label {
 }
 label input {
     margin-right: 10px;
+}
+h3 {
+    margin-top: 50px;
+    font-size: 500%;
 }

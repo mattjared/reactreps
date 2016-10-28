@@ -8,6 +8,8 @@ class Input extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
             salary: ' ',
+            rawSalary: ' ',
+            showResult: 'False'
         }
     }
     handleChange(e) {
@@ -17,7 +19,11 @@ class Input extends React.Component {
     }
     handleSubmit(e) {
         e.preventDefault();
-        this.setState({ salary: this.salary.value })
+        this.setState({
+            salary: this.salary.value,
+            rawSalary: this.salary.value,
+            showResult: 'True'
+        })
         const filingType = this.state.filingType;
         const salaryVal = this.salary.value;
         // Single
@@ -94,33 +100,43 @@ class Input extends React.Component {
         }
     }
     render() {
+        let resultsDiv;
+        // if (this.state.thinger === True) {
+        if (this.state.showResult === 'True') {
+            resultsDiv = (
+                <div>
+                <p>Filing as {this.state.filingType} with a base salary of ${this.state.rawSalary} you should expect to pay... </p>
+                <h3>${this.state.salary}</h3>
+                </div>
+            )
+        }
         return (
             <div>
-            <form onSubmit={(e) => this.handleSubmit(e)} ref={(input) => this.taxForm = input }>
-                <div>
-                    <input type="number" placeholder="50000" ref={(input) => this.salary = input}/>
-                </div>
-                <div>
-                    <label>
-                       <input type="radio" value="Single" name="choice" onChange={this.handleChange}/>
-                       Single
-                    </label>
-                    <label>
-                        <input type="radio" value="Married" name="choice" onChange={this.handleChange}/>
-                        Married
-                    </label>
-                    <label>
-                        <input type="radio" value="Household" name="choice" onChange={this.handleChange}/>
-                        Head of Household
-                    </label>
-                    <label>
-                        <input type="radio" value="Seperately" name="choice" onChange={this.handleChange}/>
-                        Married Filing Seperately
-                    </label>
-                </div>
-                <button>What are ya paying?</button>
-            </form>
-            <p>{this.state.salary}</p>
+                <form onSubmit={(e) => this.handleSubmit(e)} ref={(input) => this.taxForm = input }>
+                    <div>
+                        <input type="number" placeholder="50000" ref={(input) => this.salary = input}/>
+                    </div>
+                    <div>
+                        <label>
+                           <input type="radio" value="Single" name="choice" onChange={this.handleChange}/>
+                           Single
+                        </label>
+                        <label>
+                            <input type="radio" value="Married" name="choice" onChange={this.handleChange}/>
+                            Married
+                        </label>
+                        <label>
+                            <input type="radio" value="Household" name="choice" onChange={this.handleChange}/>
+                            Head of Household
+                        </label>
+                        <label>
+                            <input type="radio" value="Seperately" name="choice" onChange={this.handleChange}/>
+                            Married Filing Seperately
+                        </label>
+                    </div>
+                    <button>Run the numbers!</button>
+                </form>
+                { resultsDiv }
             </div>
         )
     }
