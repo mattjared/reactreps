@@ -107,6 +107,7 @@ class Input extends React.Component {
                 <div>
                 <p>Filing as {this.state.filingType} with a base salary of ${this.state.rawSalary} you should expect to pay... </p>
                 <h3>${this.state.salary}</h3>
+                <p><small>Based on <a href="http://www.forbes.com/sites/kellyphillipserb/2016/10/25/irs-announces-2017-tax-rates-standard-deductions-exemption-amounts-and-more/#3f012c47387a" target="blank">this</a> data from Forbes.</small></p>
                 </div>
             )
         }
