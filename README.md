@@ -6,18 +6,19 @@ To open an app or tinker on one...
 `cd` into whichever rep you'd like and run `npm start`. You'll get a dev server up and running, make changes in app.css or app.js and you're on your way.
 
 Possible reps I'd like to attempt:
+- [x] [timer, kinda](https://github.com/mattjared/reactreps/tree/master/rep001)
 - [x] [change a class on click](https://github.com/mattjared/reactreps/tree/master/rep005)
+- [x] [tabbed nav](https://github.com/mattjared/reactreps/tree/master/rep006)
+- [x] [tax bracket breakdown](https://github.com/mattjared/reactreps/tree/master/rep019)
+- [x] [calculator, kinda](https://github.com/mattjared/reactreps/tree/master/rep011)
 - [ ] show cursor location
 - [ ] some kind of weather output reading an API
 - [ ] to do list
 - [ ] personal site generator
 - [ ] bookDB
-- [ ] tax bracket breakdown
 - [ ] cost of living breakdown
 - [ ] budget builder
-- [x] timer (kinda accomplished somewhat [here](https://github.com/mattjared/reactreps/tree/master/rep011))
 - [ ] navigation menu
-- [x] [tabbed nav](https://github.com/mattjared/reactreps/tree/master/rep006)
 - [ ] add state to every pixel hovered over
 - [ ] html minifier
 - [ ] time on site calculator
@@ -29,7 +30,6 @@ Possible reps I'd like to attempt:
 - [ ] resume maker (enter a bunch of data and click a few buttons to change styles made)
 - [ ] swanson pyramid of greatness
 - [ ] markdown editor
-- [x] calculator [first pass](https://github.com/mattjared/reactreps/tree/master/rep011)
 - [ ] "are there nba games today?" app
 - [ ] sticky scroll bar
 - [ ] usefull css output with a gui like [this](http://www.lugolabs.com/caret)
@@ -37,6 +37,7 @@ Possible reps I'd like to attempt:
 - [ ] pig latin generator
 - [ ] character counter
 - [ ] count all characters and break them down into tweets
+- [ ] need more practce with props and state, so anything that does that
 
 Additional ideas: [Here](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/), [here](http://bonsaiden.github.io/JavaScript-Garden/), [here](https://github.com/jlem/WebDevChallenge) and [here](https://www.reddit.com/r/dailyprogrammer).
 

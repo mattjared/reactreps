@@ -16,7 +16,7 @@ h3 {
 input {
     font-size: 300%;
     margin: 50px auto;
-    display: block;
+    display: inline-block;
 }
 button {
     display: inline-block;
@@ -25,4 +25,10 @@ button {
     padding: 1%;
     outline: 0;
     border: 0;
+}
+label {
+    padding-right: 40px;
+}
+label input {
+    margin-right: 10px;
 }
