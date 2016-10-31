@@ -1,0 +1,13 @@
+.App {
+    text-align: center;
+}
+.App-header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, .5);
+  min-height: 170px;
+  padding: 20px;
+  color: white;
+}
+.editor {
+  margin: 0 auto;
+}

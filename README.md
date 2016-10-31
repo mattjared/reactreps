@@ -11,6 +11,7 @@ Possible reps I'd like to attempt:
 - [x] [tabbed nav](https://github.com/mattjared/reactreps/tree/master/rep006)
 - [x] [calculator, kinda](https://github.com/mattjared/reactreps/tree/master/rep011)
 - [x] [tax bracket calculator](https://github.com/mattjared/reactreps/tree/master/rep019)
+- [x] figure out how to deploy to a production site: [Completed with rep 19!](https://ns-jtejeuwajc.now.sh/)
 - [x] [turn any date into a color](https://github.com/mattjared/reactreps/tree/master/rep020)
 - [ ] show cursor location
 - [ ] some kind of weather output reading an API
@@ -24,7 +25,6 @@ Possible reps I'd like to attempt:
 - [ ] html minifier
 - [ ] time on site calculator
 - [ ] show time in your city and in other cities
-- [ ] figure out how to deploy to a production site
 - [ ] turn any name into a color
 - [ ] pig latin translator
 - [ ] resume maker (enter a bunch of data and click a few buttons to change styles made)
@@ -37,6 +37,7 @@ Possible reps I'd like to attempt:
 - [ ] pig latin generator
 - [ ] character counter
 - [ ] count all characters and break them down into tweets
+- [ ] quiz that tells you an nba team to like
 - [ ] need more practce with props and state, so anything that does that
 
 Additional ideas: [Here](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/), [here](http://bonsaiden.github.io/JavaScript-Garden/), [here](https://github.com/jlem/WebDevChallenge) and [here](https://www.reddit.com/r/dailyprogrammer).
