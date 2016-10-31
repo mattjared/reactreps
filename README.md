@@ -9,8 +9,9 @@ Possible reps I'd like to attempt:
 - [x] [timer, kinda](https://github.com/mattjared/reactreps/tree/master/rep001)
 - [x] [change a class on click](https://github.com/mattjared/reactreps/tree/master/rep005)
 - [x] [tabbed nav](https://github.com/mattjared/reactreps/tree/master/rep006)
-- [x] [tax bracket breakdown](https://github.com/mattjared/reactreps/tree/master/rep019)
 - [x] [calculator, kinda](https://github.com/mattjared/reactreps/tree/master/rep011)
+- [x] [tax bracket calculator](https://github.com/mattjared/reactreps/tree/master/rep019)
+- [x] [turn any date into a color](https://github.com/mattjared/reactreps/tree/master/rep020)
 - [ ] show cursor location
 - [ ] some kind of weather output reading an API
 - [ ] to do list
@@ -24,7 +25,6 @@ Possible reps I'd like to attempt:
 - [ ] time on site calculator
 - [ ] show time in your city and in other cities
 - [ ] figure out how to deploy to a production site
-- [ ] turn any birthday into a color
 - [ ] turn any name into a color
 - [ ] pig latin translator
 - [ ] resume maker (enter a bunch of data and click a few buttons to change styles made)
@@ -61,3 +61,4 @@ Completed Reps
 - Rep017: Play with inputs and state again
 - Rep018: Reactforbeginners.com course materials
 - Rep019: Tax bracket calculator up in here!!
+- Rep020: Turn any date into a color! But this mostly sucks since there's a limit to values in days of the month and number of months so basically just cycle through red and black. BUT, played with inline styles, strings and dates a bit
