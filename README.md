@@ -63,3 +63,4 @@ Completed Reps
 - Rep018: Reactforbeginners.com course materials
 - Rep019: Tax bracket calculator up in here!!
 - Rep020: Turn any date into a color! But this mostly sucks since there's a limit to values in days of the month and number of months so basically just cycle through red and black. BUT, played with inline styles, strings and dates a bit
+- Rep021: Input a character goal, turn the page green as you get closer to your goal.
