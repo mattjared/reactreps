@@ -8,32 +8,34 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleTyping = this.handleTyping.bind(this);
     this.state = {
-        topText: '',
+        wordGoal: '',
         words: ' ',
-        wordCount: ' ',
-        checker: 'DONT WORK'
+        wordCount: 0,
+        checker: ' '
     }
     }
     handleChange(e) {
         this.setState({
-            topText: e.target.value,
+            wordGoal: e.target.value,
         })
     }
     handleTyping(e) {
         this.setState({
             words: e.target.value,
-            wordCount: e.target.value.length
+            wordCount: e.target.value.length,
+            checker: this.state.wordCount / this.state.wordGoal,
         })
     }
     render() {
-        let appDiv = {background: "white"} ? this.state.wordCount > 10 : {background: "blue"};
+        const appStyle = {
+            backgroundColor: 'rgba(0, 255, 0,'+ this.state.checker+')',
+        }
         return (
-            <div className="App" style={appDiv}>
+            <div className="App" style={appStyle} key="this.state.checker">
                 <div className="App-header">
                     <h2>How many characters do you need to write?</h2>
                     <input type="number" required onChange={this.handleChange}/>
-                    <h2>{this.state.topText}</h2>
-                    <p>The more you type and get closer to your goal the more the page will turn green.</p>
+                    <h2>{this.state.wordGoal}</h2>
                 </div>
                 <textarea
                     onChange={this.handleTyping}
@@ -44,8 +46,10 @@ class App extends Component {
                     rows="10"
                     placeholder="Start typin yo!">
                 </textarea>
-                <p key={this.state.wordCount}>{this.state.wordCount}</p>
-                <h3>hey there</h3>
+                <div className="subtext">
+                    <p>Reach your goal to turn the page green</p>
+                    <p>Character Count: {this.state.wordCount }</p>
+                </div>
             </div>
         );
     }

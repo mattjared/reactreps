@@ -1,13 +1,38 @@
 .App {
-    text-align: center;
+  text-align: center;
+  height: 100vh;
 }
 .App-header {
   text-align: center;
-  background-color: rgba(0, 0, 0, .5);
-  min-height: 170px;
+  background-color: rgba(0, 0, 0, .3);
+  min-height: 160px;
   padding: 20px;
   color: white;
 }
 .editor {
   margin: 0 auto;
+}
+input[type="number"],
+textarea {
+  border: 2px solid rgba(0, 0, 0, .1);
+  outline: 0;
+  background-color: rgba(255, 255, 255, .9);
+}
+textarea {
+  width: 50vw;
+  height: 40vh;
+  margin-top: 5vh;
+}
+.subtext {
+  width: 50vw;
+  margin: 0 auto;
+}
+.subtext p {
+  font-size: 9px;
+}
+.subtext p:first-of-type {
+  float: left;
+}
+.subtext p:last-of-type {
+  float: right;
 }
