@@ -1,5 +1,6 @@
 {
   "name": "rep022",
+<<<<<<< HEAD
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,16 @@
   },
   "devDependencies": {
     "react-scripts": "0.9.3"
+=======
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.7.0"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+>>>>>>> 758f78711ac04f8e9968250af86f2cee82e4c339
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,4 +26,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 758f78711ac04f8e9968250af86f2cee82e4c339
