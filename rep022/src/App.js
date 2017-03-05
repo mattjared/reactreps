@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
-// import Items from './Items';
-// import logo from './logo.svg';
 import './App.css';
 
 var toSumItems = [];
 toSumItems.push({index: 1, value: '5.01' })
 toSumItems.push({index: 2, value: '32.21' })
 toSumItems.push({index: 3, value: '1.31' })
-
-// <form onSubmit={this.addItem}>
-//   <input type="text"  id="person1input"/>
-//   <input type="submit" value="calc" />
-// </form>
 
 class ToAddList extends Component {
   render() {
@@ -52,20 +45,14 @@ class ToAddForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
   }
-  onSubmit(event) {
-    event.preventDefault();
-    // let newItemValue = document.getElementById("inputvalthing").value;
-    let newItemValue = document.getElementById("inputvalthing").value;
-    // this.props.addItem(this.state.tempState);
-    if (newItemValue) {
-      this.props.addItem({newItemValue});
-      //input.value = '';
-    }
-  }
   onChange(event) {
     this.setState({
       tempState: event.target.value,
     })
+  }
+  onSubmit(event) {
+    event.preventDefault();
+    this.props.addItem(this.state.tempState);
   }
   render() {
     return(
@@ -92,14 +79,12 @@ class App extends Component {
   addItem(toSumItem) {
     toSumItems.unshift({
       index: toSumItems.length+1,
-      value: toSumItem.newItemValue,
+      value: toSumItem,
     });
-    // console.log(toSumItems);
     this.addItemsUp();
   }
   removeItem(itemIndex) {
     toSumItems.splice(itemIndex, 1);
-    this.setState({item: toSumItems});
     this.addItemsUp();
   }
   addItemsUp() {
@@ -116,9 +101,12 @@ class App extends Component {
       total: allItemsMaths.reduce(getSum),
     });
   }
+  componentDidMount() {
+    this.addItemsUp();
+  }
   render() {
     return (
-      <div className="App" >
+      <div className="App">
         <ToAddForm addItem={this.addItem} />
         <ToAddList items={toSumItems} removeItem={this.removeItem} />
         { this.state.total }
@@ -127,4 +115,23 @@ class App extends Component {
   }
 }
 
-export default App;
+class AppWrap extends Component {
+  constructor() {
+    super();
+    this.state = {
+      person1: '',
+      person2: '',
+      grandTotal: '',
+    }
+  }
+  render() {
+    return(
+      <div>
+        <App wrapName="first"/>
+        <App wrapName="second"/>
+      </div>
+    );
+  }
+}
+
+export default AppWrap;
