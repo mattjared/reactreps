@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 var toSumItems = [];
-toSumItems.push({index: 1, value: '5.01' })
+// var toSumItems = [];
+toSumItems.push({index: 1, value: '.01' })
 toSumItems.push({index: 2, value: '32.21' })
 toSumItems.push({index: 3, value: '1.31' })
 
@@ -71,6 +72,7 @@ class App extends Component {
       item: null,
       total: null,
       tempState: '',
+      altSumItem: [],
     }
     this.addItem = this.addItem.bind(this);
     this.removeItem = this.removeItem.bind(this);
@@ -81,6 +83,7 @@ class App extends Component {
       index: toSumItems.length+1,
       value: toSumItem,
     });
+    console.log(this.state.altSumItem);
     this.addItemsUp();
   }
   removeItem(itemIndex) {
