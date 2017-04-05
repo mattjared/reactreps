@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+=======
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
@@ -8,8 +20,16 @@ coverage
 
 # production
 build
+>>>>>>> 758f78711ac04f8e9968250af86f2cee82e4c339
 
 # misc
 .DS_Store
 .env
+<<<<<<< HEAD
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+=======
 npm-debug.log
+>>>>>>> 758f78711ac04f8e9968250af86f2cee82e4c339
