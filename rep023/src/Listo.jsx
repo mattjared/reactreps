@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import classname from 'classnames';
 
 class Listo extends Component {
   render() {
+    const classy = classname({
+      listo: true,
+      active: this.props.active ? true : null,
+    })
     return(
       <div
-        className="listo"
         onClick={this.props.clicker}
-        style={this.props.active? {color: 'blue'} : null }
+        className={classy}
       >
-        <span>{this.props.active}</span>
         <h2>{this.props.name}</h2>
         <p>{this.props.location}</p>
       </div>

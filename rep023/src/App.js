@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Listo from './Listo';
-// import classname from 'classnames';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    // this.clicker = this.clicker.bind(this, i);
     this.state = {
       testo: 0,
     }
@@ -18,11 +16,7 @@ class App extends Component {
     });
   }
   render() {
-    // const listClass = classname({
-    //   listo: true,
-    //   active: this.state.testo,
-    // });
-    const listo = this.state.listo;
+    const testo = this.state.testo;
     return (
       <div className="App">
         <div className="App-header">
@@ -31,12 +25,11 @@ class App extends Component {
         </div>
         {this.props.people.map((people, i) =>
           <Listo
+            active={testo === i ? true : false }
+            key={i}
             name={people.name}
             location={people.location}
-            key={i}
             clicker={this.clicker.bind(this, i)}
-            // styles={listClass}
-            active={listo === i}
           />
         )}
         {this.state.testo}

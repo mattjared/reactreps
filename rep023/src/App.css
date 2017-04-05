@@ -44,5 +44,6 @@ p {
   margin-bottom: .5rem;
 }
 .listo.active {
-  background-color: blue;
+  background-color: #eee;
+  color: lightGreen;
 }
